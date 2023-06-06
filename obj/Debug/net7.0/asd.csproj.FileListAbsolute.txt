@@ -1,0 +1,15 @@
+C:\Users\Correanos\Desktop\cursodotnet\asd\bin\Debug\net7.0\asd.exe
+C:\Users\Correanos\Desktop\cursodotnet\asd\bin\Debug\net7.0\asd.deps.json
+C:\Users\Correanos\Desktop\cursodotnet\asd\bin\Debug\net7.0\asd.runtimeconfig.json
+C:\Users\Correanos\Desktop\cursodotnet\asd\bin\Debug\net7.0\asd.dll
+C:\Users\Correanos\Desktop\cursodotnet\asd\bin\Debug\net7.0\asd.pdb
+C:\Users\Correanos\Desktop\cursodotnet\asd\obj\Debug\net7.0\asd.csproj.AssemblyReference.cache
+C:\Users\Correanos\Desktop\cursodotnet\asd\obj\Debug\net7.0\asd.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Correanos\Desktop\cursodotnet\asd\obj\Debug\net7.0\asd.AssemblyInfoInputs.cache
+C:\Users\Correanos\Desktop\cursodotnet\asd\obj\Debug\net7.0\asd.AssemblyInfo.cs
+C:\Users\Correanos\Desktop\cursodotnet\asd\obj\Debug\net7.0\asd.csproj.CoreCompileInputs.cache
+C:\Users\Correanos\Desktop\cursodotnet\asd\obj\Debug\net7.0\asd.dll
+C:\Users\Correanos\Desktop\cursodotnet\asd\obj\Debug\net7.0\refint\asd.dll
+C:\Users\Correanos\Desktop\cursodotnet\asd\obj\Debug\net7.0\asd.pdb
+C:\Users\Correanos\Desktop\cursodotnet\asd\obj\Debug\net7.0\asd.genruntimeconfig.cache
+C:\Users\Correanos\Desktop\cursodotnet\asd\obj\Debug\net7.0\ref\asd.dll
