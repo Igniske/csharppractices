@@ -20,30 +20,30 @@ Console.WriteLine(2 + 15 / 6 * 1 - 7 % 2);
 */
 /*5. Write a C# Sharp program to swap two numbers.*/
 
-    /*int number1, number2, temp;
+/*int number1, number2, temp;
 
-    number1 = int.Parse(Console.ReadLine());
-    number2 = int.Parse(Console.ReadLine());
+number1 = int.Parse(Console.ReadLine());
+number2 = int.Parse(Console.ReadLine());
 
-    temp = number1;
-    number1 = number2;
-    number2= temp;
+temp = number1;
+number1 = number2;
+number2= temp;
 
-    Console.WriteLine(number1);
-    Console.WriteLine(number2);
-    */
+Console.WriteLine(number1);
+Console.WriteLine(number2);
+*/
 
 /*6. Write a C# Sharp program to print the output of the multiplication of three numbers entered by the user.
 */
-    /*int number1, number2, number3;
+/*int number1, number2, number3;
 
-    Console.WriteLine("Input the first Number:");
-    number1 = int.Parse(Console.ReadLine());
-    Console.WriteLine("Input the second Number:");
-    number2 = int.Parse(Console.ReadLine());
-    Console.WriteLine("Input the third Number:");
-    number3 = int.Parse(Console.ReadLine());
-    Console.WriteLine(number1 * number2 * number3);/*
+Console.WriteLine("Input the first Number:");
+number1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Input the second Number:");
+number2 = int.Parse(Console.ReadLine());
+Console.WriteLine("Input the third Number:");
+number3 = int.Parse(Console.ReadLine());
+Console.WriteLine(number1 * number2 * number3);/*
 
 /*7. Write a C# Sharp program to print on screen the output of adding, subtracting, multiplying and dividing two numbers entered by the user.*/
 /*
@@ -103,21 +103,175 @@ for (int i = 0; i <= 50; i++)
 */
 /*11. Write a C# Sharp program that takes an age (for example 20) as input and prints something like "You look older than 20".*/
 
-    int age;
+/*   int age;
 
-    Console.WriteLine("Input your age:");
-    age = int.Parse(Console.ReadLine());
+   Console.WriteLine("Input your age:");
+   age = int.Parse(Console.ReadLine());
 
-    if(age >25)
+   if(age >25)
+   {
+       Console.WriteLine($"You look older than {age}");
+   } else
+   {
+       Console.WriteLine($"You look younger than {age}");
+   }
+*/
+
+/*12. Write a C# program that takes a number as input and displays it four times in a row (separated by blank spaces), and then four times in the next row, with no separation. You should do it twice:*/
+
+/*int number;
+
+number = int.Parse(Console.ReadLine());
+for(int i = 1; i < 4; i++)
     {
-        Console.WriteLine($"You look older than {age}");
-    } else
+        if(i % 2 == 0)
+            {
+                Console.WriteLine($"{number} {number} {number} {number}");
+            } else
+            {
+                Console.WriteLine($"{number}{number}{number}{number}");
+            }
+    }
+*/
+
+/*  Write a C# program that takes a number as input and displays a rectangle of 3 columns wide and 5 rows tall using that digit. */
+/*
+int number;
+
+number = int.Parse(Console.ReadLine());
+
+Console.WriteLine($"{number}{number}{number}");
+for(int i = 0; i <2; i++)
     {
-        Console.WriteLine($"You look younger than {age}");
+        Console.WriteLine($"{number} {number}");
+    }
+Console.Write($"{number}{number}{number}");
+*/
+
+/*14. Write a C# program to convert Celsius degrees to Kelvin and Fahrenheit.*/
+
+/*
+int number;
+
+Console.WriteLine("Insert the celsius number:");
+number = int.Parse(Console.ReadLine());
+Console.WriteLine($"Farenheit = {(number * 1.8) + 32}");
+Console.WriteLine($"Kelvin= {number + 273.15}");
+*/
+
+/*15. Write a C# program that removes a specified character from a non-empty string using the index of a character.*/
+/*
+string myString, newString;
+int index = 3;
+
+myString = (Console.ReadLine());
+
+newString = myString.Remove(index, 1);
+
+Console.WriteLine(newString);
+*/
+
+/*16. Write a C# program to create a new string from a given string where the first and last characters change their positions.*/
+/*
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        string myString, newString;
+
+        myString = Console.ReadLine();
+
+        char[] charArray = myString.ToCharArray();
+
+        char firstChar = charArray[0];
+        char lastChar = charArray[charArray.Length - 1];
+
+        charArray[0] = lastChar;
+        charArray[charArray.Length - 1] = firstChar;
+
+        newString = new string(charArray);
+
+        Console.WriteLine(newString);
+    }
+}
+*/
+
+/*17. Write a C# program to create a string from a given string (length 1 or more) with the first character added at the front and back.*/
+/*
+string firstString, endString;
+
+firstString = Console.ReadLine();
+
+if(firstString.Length > 0)
+    {
+        char [] arrayChar = firstString.ToCharArray();
+        char firstChar = arrayChar[0];
+        endString = firstChar + firstString + firstChar;
+        Console.WriteLine(endString);
     }
 
+*/
 
+/*18. Write a C# program to check a pair of integers and return true if one is negative and one is positive.*/
+/*
+int firstInt, secondInt;
 
+firstInt = int.Parse(Console.ReadLine());
+secondInt = int.Parse(Console.ReadLine());
 
+if((firstInt < 0 && secondInt >= 0 )|| (firstInt >= 0 && secondInt < 0 ))
+    {
+        Console.WriteLine(true);
+    } else
+    {
+        Console.WriteLine(false);
+    }
+*/
 
+/*19. Write a C# program to compute the sum of two given integers. If two values are the same, return the triple of their sum.*/
+/*
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        int firstInt, secondInt;
 
+        firstInt = int.Parse(Console.ReadLine());
+        secondInt = int.Parse(Console.ReadLine());
+
+        if (firstInt == secondInt)
+        {
+            Console.WriteLine((firstInt + secondInt) * 3);
+        }
+        else
+        {
+            Console.WriteLine(firstInt + secondInt);
+        }
+    }
+}
+*/
+
+/* 20. Write a C# program to get the absolute value of the difference between two given numbers. Return double the absolute value of the difference if the first number is greater than the second number. */
+
+int firstInt, secondInt, absoluteNumber;
+
+firstInt = int.Parse(Console.ReadLine());
+secondInt = int.Parse(Console.ReadLine());
+
+if(firstInt < secondInt)
+    {
+        absoluteNumber = (firstInt - secondInt) * 2;
+        if(absoluteNumber < 0){
+            absoluteNumber = absoluteNumber * -1;
+        }
+        Console.WriteLine(absoluteNumber);
+    } else
+    {
+        absoluteNumber = firstInt - secondInt;
+        if(absoluteNumber <0)
+        {
+            absoluteNumber = absoluteNumber * -1;
+            Console.WriteLine(absoluteNumber);
+        }
+        Console.WriteLine(absoluteNumber);
+    }
