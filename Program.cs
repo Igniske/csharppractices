@@ -253,6 +253,7 @@ internal class Program
 
 /* 20. Write a C# program to get the absolute value of the difference between two given numbers. Return double the absolute value of the difference if the first number is greater than the second number. */
 
+/*
 int firstInt, secondInt, absoluteNumber;
 
 firstInt = int.Parse(Console.ReadLine());
@@ -275,3 +276,149 @@ if(firstInt < secondInt)
         }
         Console.WriteLine(absoluteNumber);
     }
+
+/*21. Write a C# program to check the sum of the two given integers. Return true if one of the integers is 20 or if their sum is 20.*/
+/*
+int number1, number2, sum;
+
+number1 = int.Parse(Console.ReadLine());
+number2 = int.Parse(Console.ReadLine());
+
+if((number1 == 20 || number2 == 20) || (number1 + number2 == 20))
+    {
+        Console.WriteLine(true);
+    } else
+    {
+        Console.WriteLine(false);
+    }
+*/
+
+/*22. Write a C# program to check if the given integer is within 20 of 100 or 200.*/
+/*
+int number; 
+
+number = int.Parse(Console.ReadLine());
+
+if((number >= 80 && number <=120 ) || (number >= 180 && number <= 220))
+    {
+        Console.WriteLine(true);
+    } else
+    {
+        Console.WriteLine(false);
+    }
+*/
+
+/*23. Write a C# program to convert a given string into lowercase.*/
+/*
+string firstString, newString;
+
+firstString = Console.ReadLine();
+
+newString = firstString.ToLower();
+
+Console.WriteLine(newString);
+*/
+
+/*24. Write a C# program to find the longest word in a string.*/
+/*
+string inputStr;
+
+string longestWord = "";
+
+inputStr = Console.ReadLine();
+
+string [] words = inputStr.Split(" ");
+
+for(int i = 0; i < words.Length; i++)
+    {
+        if(words[i].Length > longestWord.Length)
+            {
+                longestWord = words[i];
+            }
+    }
+Console.WriteLine(longestWord);
+*/
+
+/*25. Write a C# program to print odd numbers from 1 to 99. Prints one number per line.*/
+/*
+for(int i = 1; i < 100; i++)
+    {
+        if(i % 2 == 1)
+            {
+                Console.WriteLine(i);
+            }
+    }
+*/
+
+/* 26. Write a C# program to compute the sum of the first 500 prime numbers */
+/*
+int primeCount = 0;
+int sum = 0;
+for (int i = 2; primeCount < 500; i++)
+{
+    bool isPrime = true;
+
+    for (int divisor = 2; divisor <= Math.Sqrt(i); divisor++)
+    {
+        if (i % divisor == 0)
+        {
+            isPrime = false;
+            break;
+        }
+    }
+
+    if (isPrime)
+    {
+        sum = sum + i;
+        primeCount++;
+    }
+}
+
+Console.WriteLine(sum);
+
+*/
+
+/*27. Write a C# program and compute the sum of an integer's digits.*/
+/*
+int number, result;
+
+result = 0;
+
+number = int.Parse(Console.ReadLine());
+
+string numberStr = number.ToString();
+
+int [] numbers = new int[numberStr.Length];
+
+for(int i = 0;i < numbers.Length;i++)
+    {
+        numbers[i] = int.Parse(numberStr[i].ToString());
+    }
+
+for(int j = 0; j <numbers.Length; j++)
+    {
+        result = result + numbers[j];
+    }
+
+Console.WriteLine(result);
+*/
+
+/*28. Write a C# program to reverse the words of a sentence.*/
+
+string initialStr;
+
+string finalStr = "";
+
+initialStr = Console.ReadLine();
+
+string[] sentence = initialStr.Split(" ");
+
+if(sentence.Length > 1)
+    {
+        for(int i = 0; i < sentence.Length; i++)
+            {
+                finalStr = finalStr + " " + sentence[sentence.Length - (i + 1)];
+            }
+    }
+
+Console.WriteLine(finalStr);
